@@ -1,0 +1,48 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "ReclaimKspDres",
+    "name": "Reclaim KSP - Dres",
+    "abstract": "This mod adds Dres, the urban legend referenced in KSP memes, based on testimony from the victims of the mass hallucination called \"KSP 2\".",
+    "author": [
+        "Kramken",
+        "Danny2462"
+    ],
+    "version": "0.1.0-alpha.2",
+    "ksp_version_min": "1.12",
+    "license": "CC-BY-NC-ND-4.0",
+    "release_status": "development",
+    "resources": {
+        "homepage": "https://github.com/reclaim-ksp/reclaim-ksp-dres",
+        "repository": "https://github.com/reclaim-ksp/reclaim-ksp-dres",
+        "bugtracker": "https://github.com/reclaim-ksp/reclaim-ksp-dres/issues"
+    },
+    "tags": [
+        "planet-pack"
+    ],
+    "depends": [
+        {
+            "name": "Kopernicus"
+        },
+        {
+            "name": "ModuleManager"
+        }
+    ],
+    "install": [
+        {
+            "find": "GameData/ReclaimKspDres",
+            "install_to": "GameData",
+            "as": "ReclaimKspDres"
+        }
+    ],
+    "download": "https://api.github.com/repos/reclaim-ksp/reclaim-ksp-dres/zipball/0.1.0-alpha.2",
+    "download_size": 40855301,
+    "download_hash": {
+        "sha1": "CD9BDB78143682DC59C638729ABF3EB0E204C252",
+        "sha256": "D3DBC59B57B15270C87B41F3BC82C399CF8E7E499732633129F8A7333A4AE424"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 37283832,
+    "release_date": "2024-09-24T10:12:14Z",
+    "$schema": "https://raw.githubusercontent.com/KSP-CKAN/CKAN/master/CKAN.schema",
+    "x_generated_by": "netkan"
+}
