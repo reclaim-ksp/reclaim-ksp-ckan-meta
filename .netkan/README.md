@@ -1,6 +1,7 @@
 `netkan.exe` is primarily for internal use by the CKAN team, but is provided "as-is" for personal use.
 
 Download link for latest version: https://ksp-ckan.s3-us-west-2.amazonaws.com/netkan.exe
+For CKAN: https://ksp-ckan.s3-us-west-2.amazonaws.com/ckan.exe
 
 `*.netkan` JSON files should use `"$schema": "https://raw.githubusercontent.com/KSP-CKAN/CKAN/master/CKAN.schema"`.
 

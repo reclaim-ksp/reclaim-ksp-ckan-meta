@@ -1,10 +1,9 @@
 name: CI
 
-# on:
-#   push:
-#     branches:
-#       - main
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [repository-dispatch-event_released-assets]
 
 jobs:
   inflate:
@@ -12,13 +11,13 @@ jobs:
     runs-on: windows-latest
     permissions:
       contents: write
-      # id-token: write
     concurrency: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Inflate each `*.netkan` file
+        shell: pwsh
         run: |
           $netkan_path = Resolve-Path "./.netkan/windows/netkan.exe"
           echo "variable `$netkan_path: $($netkan_path)";
@@ -41,10 +40,12 @@ jobs:
           git config --global user.email ${{ github.actor_id }}+github-actions[bot]@users.noreply.github.com
           git fetch
           git checkout main
+          git pull
           git checkout ckan/inflated
-          git merge -m "Merge branch 'main' into 'ckan/inflated'" main
+          git pull
+          git merge -m "Merge branch 'main' into 'ckan/inflated'" main --allow-unrelated-histories
           git add -A
           git commit -am "Automated generation of .ckan files"
           git checkout main
-          git merge -m "Merge branch 'ckan/inflated' into 'main'" ckan/inflated
+          git merge -m "Merge branch 'ckan/inflated' into 'main'" ckan/inflated --allow-unrelated-histories
           git push
