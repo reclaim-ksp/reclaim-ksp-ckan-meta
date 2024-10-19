@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"typescript.tsdk": "node_modules/typescript/lib",
+		"cSpell.words": [
+			"bugtracker",
+			"ckan",
+			"Dres",
+			"Kopernicus",
+			"netkan"
+		],
+    },
+	"extensions": {
+		"recommendations": [
+			"dbaeumer.vscode-eslint",
+			"vivaxy.vscode-conventional-commits",
+			"al2me6.ksp-cfg-support"
+		]
+	}
+}
