@@ -14,6 +14,21 @@
 			"kref",
 			"netkan"
 		],
+        "json.schemas": [
+            {
+                "url": "https://json.schemastore.org/KSP-CKAN.json",
+                "fileMatch": [
+                    "*.ckan",
+                    "*.netkan",
+                    "*.frozen"
+                ]
+            }
+        ],
+        "files.associations": {
+            "*.ckan": "json",
+            "*.netkan": "json",
+            "*.frozen": "json",
+        }
     },
 	"extensions": {
 		"recommendations": [
