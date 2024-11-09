@@ -16,6 +16,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Make sure `netkan.exe` is available and print its version
+        shell: pwsh
+        run: |
+          $netkan_path = Resolve-Path "./.netkan/windows/netkan.exe"
+          echo "variable `$netkan_path: $($netkan_path)";
+          Set-Alias -Name netkan.exe -Value $netkan_path
+          $env:PATH += $netkan_path
+          netkan.exe --version
+
       - name: Inflate each `*.netkan` file
         shell: pwsh
         run: |
