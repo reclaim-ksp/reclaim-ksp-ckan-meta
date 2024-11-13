@@ -1,9 +1,12 @@
 {
     "spec_version": "v1.18",
     "identifier": "ReclaimKspDres",
-    "name": "reclaim ksp monorepo",
+    "name": "Reclaim KSP - Dres",
     "abstract": "This mod adds Dres, the urban legend referenced in KSP memes, based on testimony from the victims of the mass hallucination called \"KSP 2\".",
-    "author": "github-actions[bot]",
+    "author": [
+        "Kramken",
+        "Danny2462"
+    ],
     "version": "0.1.6",
     "ksp_version_min": "1.12",
     "license": "CC-BY-NC-ND-4.0",

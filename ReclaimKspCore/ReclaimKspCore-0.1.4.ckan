@@ -1,9 +1,11 @@
 {
     "spec_version": "v1.18",
     "identifier": "ReclaimKspCore",
-    "name": "reclaim ksp monorepo",
+    "name": "Reclaim KSP - Core",
     "abstract": "This is a metapackage bundling all the third-party dependencies, namely the core modpack and patches for Reclaim KSP.",
-    "author": "github-actions[bot]",
+    "author": [
+        "Danny2462"
+    ],
     "version": "0.1.4",
     "ksp_version_min": "1.12",
     "license": "CC-BY-NC-ND-4.0",
