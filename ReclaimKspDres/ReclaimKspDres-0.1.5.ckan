@@ -1,0 +1,47 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "ReclaimKspDres",
+    "name": "reclaim ksp monorepo",
+    "abstract": "This mod adds Dres, the urban legend referenced in KSP memes, based on testimony from the victims of the mass hallucination called \"KSP 2\".",
+    "author": "github-actions[bot]",
+    "version": "0.1.5",
+    "ksp_version_min": "1.12",
+    "license": "CC-BY-NC-ND-4.0",
+    "release_status": "development",
+    "resources": {
+        "homepage": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/tree/main/packages/reclaim-ksp-dres",
+        "repository": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo",
+        "bugtracker": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/issues"
+    },
+    "tags": [
+        "planet-pack"
+    ],
+    "depends": [
+        {
+            "name": "Kopernicus"
+        },
+        {
+            "name": "ModuleManager"
+        },
+        {
+            "name": "VertexMitchellNetravaliHeightMap"
+        }
+    ],
+    "install": [
+        {
+            "find": "GameData/ReclaimKspDres",
+            "install_to": "GameData",
+            "as": "ReclaimKspDres"
+        }
+    ],
+    "download": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/releases/download/reclaim-ksp-dres%400.1.5/reclaim-ksp-dres%400.1.5.zip",
+    "download_size": 36887473,
+    "download_hash": {
+        "sha1": "35C17249320577F0935FFA30F7A0FCCFC153493A",
+        "sha256": "CF1213F5C74972A98AAC565CCBB48D29A77FEFA1ED5696135F0796237F92865E"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 37283773,
+    "release_date": "2024-11-13T08:50:38Z",
+    "x_generated_by": "netkan"
+}
