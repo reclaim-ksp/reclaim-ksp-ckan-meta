@@ -1,4 +1,12 @@
 {
     "identifier": "ReclaimKspDres",
+<<<<<<< HEAD
+=======
+    "name": "Reclaim KSP - Dres",
+    "author": [
+        "Kramken",
+        "Danny2462"
+    ],
+>>>>>>> main
     "$kref": "#/ckan/github/reclaim-ksp/reclaim-ksp-monorepo/asset_match/^reclaim-ksp-dres@.+\\.zip$"
 }

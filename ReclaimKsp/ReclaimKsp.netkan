@@ -1,0 +1,8 @@
+{
+    "identifier": "ReclaimKsp",
+    "name": "Reclaim KSP",
+    "author": [
+        "Danny2462"
+    ],
+    "$kref": "#/ckan/github/reclaim-ksp/reclaim-ksp-monorepo/asset_match/^reclaim-ksp@.+\\.zip$"
+}

@@ -1,0 +1,46 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "ReclaimKsp",
+    "name": "Reclaim KSP",
+    "abstract": "Install this to get the whole Reclaim KSP mod. This metapackage bundles all the required packages.",
+    "author": [
+        "Danny2462"
+    ],
+    "version": "0.1.4",
+    "ksp_version_min": "1.12",
+    "license": "CC-BY-NC-ND-4.0",
+    "release_status": "development",
+    "resources": {
+        "homepage": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/tree/main/packages/reclaim-ksp",
+        "repository": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo",
+        "bugtracker": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/issues"
+    },
+    "depends": [
+        {
+            "name": "ReclaimKspCore",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "ReclaimKspDres",
+            "suppress_recommendations": true
+        }
+    ],
+    "install": [
+        {
+            "find": "GameData/ReclaimKsp",
+            "install_to": "GameData",
+            "as": "ReclaimKsp"
+        }
+    ],
+    "download": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/releases/download/reclaim-ksp%400.1.4/reclaim-ksp%400.1.4.zip",
+    "download_size": 752,
+    "download_hash": {
+        "sha1": "959C3C34E1E12BED5360D83A944A45FF92C0F252",
+        "sha256": "4612BE958C8820ED7812EEFEE04F326C70978B71A82D854B595C674B3BF21E96"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 1162,
+    "release_date": "2024-11-14T18:08:37Z",
+    "kind": "metapackage",
+    "x_generated_by": "netkan"
+}
