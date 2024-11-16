@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Make sure `netkan.exe` is available and print its version
         shell: pwsh
@@ -44,17 +46,17 @@ jobs:
       - name: Commit inflated `*.ckan` files
         # https://stackoverflow.com/questions/57921401/push-to-origin-from-github-action/58393457#58393457
         # https://github.com/actions/checkout/pull/1707
+        # https://stackoverflow.com/questions/67369480/git-fast-forward-not-working-in-github-actions-workflows
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email ${{ github.actor_id }}+github-actions[bot]@users.noreply.github.com
-          git fetch
           git checkout main
           git pull
           git checkout ckan/inflated
           git pull
-          git merge -m "Merge branch 'main' into 'ckan/inflated'" main --allow-unrelated-histories
+          git merge -m "Merge branch 'main' into 'ckan/inflated'" main
           git add -A
           git commit -am "Automated generation of .ckan files"
           git checkout main
-          git merge -m "Merge branch 'ckan/inflated' into 'main'" ckan/inflated --allow-unrelated-histories
+          git merge -m "Merge branch 'ckan/inflated' into 'main'" ckan/inflated
           git push
