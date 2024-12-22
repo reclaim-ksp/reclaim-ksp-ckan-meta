@@ -1,0 +1,53 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "ReclaimKspPatches",
+    "name": "Reclaim KSP - Patches",
+    "abstract": "This package contains all the patches to be applied on top of Reclaim KSP - Core Modpack.",
+    "author": [
+        "Danny2462"
+    ],
+    "version": "0.1.6",
+    "ksp_version_min": "1.12",
+    "license": "CC-BY-NC-ND-4.0",
+    "release_status": "development",
+    "resources": {
+        "homepage": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/tree/main/packages/reclaim-ksp-patches",
+        "repository": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo",
+        "bugtracker": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/issues"
+    },
+    "depends": [
+        {
+            "name": "B9PartSwitch",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "CryoTanks-Core",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "Harmony2",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "KiwiTechTree",
+            "suppress_recommendations": true
+        }
+    ],
+    "install": [
+        {
+            "find": "GameData/ReclaimKspPatches",
+            "install_to": "GameData",
+            "as": "ReclaimKspPatches"
+        }
+    ],
+    "download": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/releases/download/reclaim-ksp-patches%400.1.6/reclaim-ksp-patches%400.1.6.zip",
+    "download_size": 3376,
+    "download_hash": {
+        "sha1": "44E3E1A7C8D7289D9F54C66C910F1DC4D62E76D5",
+        "sha256": "39BE80BC69D058FE47E7012EA7E5A68B09C424049E65A95BBAA93419DCF5529E"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 2717,
+    "release_date": "2024-12-22T21:59:46Z",
+    "x_generated_by": "netkan"
+}
