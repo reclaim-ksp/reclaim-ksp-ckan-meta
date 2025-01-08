@@ -1,0 +1,50 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "ReclaimKspCore",
+    "name": "Reclaim KSP - Core",
+    "abstract": "This is a metapackage bundling all the third-party dependencies, namely the core modpack and patches for Reclaim KSP.",
+    "author": [
+        "Danny2462"
+    ],
+    "version": "0.1.6",
+    "ksp_version_min": "1.12",
+    "license": "CC-BY-NC-ND-4.0",
+    "release_status": "development",
+    "resources": {
+        "homepage": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/tree/main/packages/reclaim-ksp-core",
+        "repository": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo",
+        "bugtracker": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/issues"
+    },
+    "depends": [
+        {
+            "name": "ReclaimKspCoreModpack",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "ReclaimKspForks",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "ReclaimKspPatches",
+            "suppress_recommendations": true
+        }
+    ],
+    "install": [
+        {
+            "find": "GameData/ReclaimKspCore",
+            "install_to": "GameData",
+            "as": "ReclaimKspCore"
+        }
+    ],
+    "download": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/releases/download/reclaim-ksp-core%400.1.6/reclaim-ksp-core%400.1.6.zip",
+    "download_size": 807,
+    "download_hash": {
+        "sha1": "1F7CCB65B077E07891A54EB7E2967EFDF7B8DD07",
+        "sha256": "8B2D4610D758087227A625732FBD1ACAE30D996916BCE1EC5907A4758A7E5CAF"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 1320,
+    "release_date": "2025-01-08T20:02:09Z",
+    "kind": "metapackage",
+    "x_generated_by": "netkan"
+}
