@@ -1,0 +1,35 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "ReclaimKspResourceSystem",
+    "name": "Reclaim KSP - Resource System",
+    "abstract": "A resource system without needless bloat to match the expanded scope of the game.",
+    "author": [
+        "Danny2462"
+    ],
+    "version": "0.1.3",
+    "ksp_version_min": "1.12",
+    "license": "CC-BY-NC-ND-4.0",
+    "release_status": "development",
+    "resources": {
+        "homepage": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/tree/main/packages/reclaim-ksp-resource-system",
+        "repository": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo",
+        "bugtracker": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/issues"
+    },
+    "install": [
+        {
+            "find": "GameData/ReclaimKspResourceSystem",
+            "install_to": "GameData",
+            "as": "ReclaimKspResourceSystem"
+        }
+    ],
+    "download": "https://github.com/reclaim-ksp/reclaim-ksp-monorepo/releases/download/reclaim-ksp-resource-system%400.1.3/reclaim-ksp-resource-system%400.1.3.zip",
+    "download_size": 120293,
+    "download_hash": {
+        "sha1": "C30C184F2FD3C59F18AD5FE169319047C17B3C31",
+        "sha256": "28A511D80C01A1D56A82DFA8857970E2583CA4802DBAA38CC6F75CCA854465F9"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 278136,
+    "release_date": "2025-01-29T20:41:33Z",
+    "x_generated_by": "netkan"
+}
